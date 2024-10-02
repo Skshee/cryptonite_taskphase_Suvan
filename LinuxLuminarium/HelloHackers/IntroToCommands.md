@@ -1,7 +1,5 @@
 # Introduction to Commands
 
-The Hello Hackers Module is a series designed to introduce one to the world of Linux and the command line interface.
-
 ## Basic Terminologies
 
 **Secure Shell(ssh)** - A network protocol that allows us to connect to a host computer from a remote network through a secure encrypted medium.
