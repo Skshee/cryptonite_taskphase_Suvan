@@ -1,4 +1,4 @@
-# 1-Introduction to Commands
+# Introduction to Commands
 
 ## Basic Terminologies
 
