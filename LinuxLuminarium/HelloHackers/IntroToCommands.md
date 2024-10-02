@@ -12,7 +12,7 @@ The goal of this level is to invoke a command and obtain a flag after entering t
 
 After I start the challenge on my browser's Linux Luminarium,I used **ssh -i ./key hacker@dojo.pwn.college** to connect to the server where I'll be solving the challenge from my local computer network.
 
-![Error in loading image](image.png)
+![alt text](image.png)
 
 As you can see once we have logged in, my username i.e suvan has changed to hacker and my hostname i.e Suvan has changed to hello-intro-to-commands.
 
