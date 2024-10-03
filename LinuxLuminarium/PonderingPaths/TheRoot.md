@@ -8,7 +8,7 @@ Every  file and directory in the Linux filesystem is a node in this tree. Each n
 ## Challenge Goals
 In this level, we need to access the program in the "pwn" directory and we can then obtain the flag.
 
-![Error In Loading Image](image.png)
+![Error In Loading Image](C:\Users\suvan\OneDrive\Desktop\CryptoTaskphase\cryptonite_taskphase_Suvan\cryptonite_taskphase_Suvan\LinuxLuminarium\PonderingPaths\image.png)
 
 After I connected to the pwn college server, I invoked a program by specifying the path. The path starts from the root "/"  and ends with the "pwn" directory.
 
