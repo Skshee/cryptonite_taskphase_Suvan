@@ -1,5 +1,11 @@
 # Program and Absolute Paths
 
+## Basic Terminologies
+
+**Absolute Path**- Starts at the root directory, represented by the forward slash (/), and provides the complete path to a file or directory.
+
+**Relative Path**-  Starts from the current working directory, and provides the path to a file or directory relative to the current directory.
+
 ## Challenge Objective
 
 The objective of this challenge is to obtain the flag by following a longer path.
