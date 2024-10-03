@@ -5,6 +5,8 @@ The Linux filesystem is a tree. This tree has a  root node, which is the topmost
 
 Every  file and directory in the Linux filesystem is a node in this tree. Each node has a unique path which always starts from the root "/".
 
+![alt text](image-5.png)
+
 ## Challenge Goals
 In this level, we need to access the program in the "pwn" directory and we can then obtain the flag.
 
