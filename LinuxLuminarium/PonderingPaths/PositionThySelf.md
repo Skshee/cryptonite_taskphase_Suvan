@@ -19,7 +19,7 @@ However, this was incorrect as the  program was not in the correct directory.The
 
 **Command** - cd  /usr/share/build-essential 
 
-Now we see our directory has changed as the ~$ symbol has been replace by "/usr/share/build-essential".
+Now we see our directory has changed as the ~$ symbol has been replace by "/usr/share/build-essential$".
 
 ![Error in loading image](image-3.png)
 
