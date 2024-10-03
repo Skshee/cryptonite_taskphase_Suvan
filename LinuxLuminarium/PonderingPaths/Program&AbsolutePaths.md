@@ -8,7 +8,7 @@
 
 ## Challenge Objective
 
-The objective of this challenge is to obtain the flag by following a longer path.
+The objective of this challenge is to obtain the flag by following a longer absolute path.
 
 ## Challenge Goals
 
