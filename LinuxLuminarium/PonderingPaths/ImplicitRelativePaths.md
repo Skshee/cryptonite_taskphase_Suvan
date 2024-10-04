@@ -18,7 +18,7 @@ The objective of this challenge is to make one understand how  relative paths wo
 
 ## Challenge Goals
 
-We'll need to **/challenge/run** program using a relative path with a cwd of "/". We are also given that the relative path starts with the letter "c".
+We'll need to execute the  **/challenge/run** program using a relative path with a cwd of "/". We are also given that the relative path starts with the letter "c".
 
 ![alt text](image-7.png)
 
