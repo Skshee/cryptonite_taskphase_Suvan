@@ -30,5 +30,20 @@ Here I am creating a new empty file called "s" in my home directory using the "t
 
 **Command**- touch s
 
+Then I used the **"/challenge/run s"**  command but this did not work as it is a relative path(it does not start from the root directory) and we need to follow an absolute path.
+
+I executed **"/challenge/run ~/s"**, using ~ to expand to the absolute path /home/hacker/s, which met all the challenge constraints.
+
+**Command** - /challenge/run ~/s
+
+From this we get our required flag.
+
+## Flag
+**pwn.college{YDILbNehlP_JDWAEwpWJBkTNqwx.dNzM4QDLzITO0czW}**
+
+
+
+
+
 
 
