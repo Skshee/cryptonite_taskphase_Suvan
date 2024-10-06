@@ -25,7 +25,7 @@ We did this on excel using the following steps
 2) Click highlight cell rules and format the  cells based on the value of the cell and apply the respective colour.
 3) Now we have the grid with all the required colours.
 
-![alt text](<WhatsApp Image 2024-10-06 at 20.00.13_8988bc64.jpg>)
+![alt text](<image.jpg>)
 
 However, we weren't able to understand what this image was.
 
