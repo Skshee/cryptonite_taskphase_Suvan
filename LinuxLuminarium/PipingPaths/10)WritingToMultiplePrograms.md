@@ -4,6 +4,8 @@
 
 Linux follows the philosophy that **"everything is a file"**. The system strives to provide file-like access to most resources, including the input and output of running programs.
 
+The shell follows this philosophy, allowing you to, for example, use any utility that takes file arguments on the command line (such as tee) and hook it up to the input or output side of a program. This is called **Process Substitution**.
+
 ## Challenge Goals
 
 In this challenge, we have `/challenge/hack`, /`challenge/the`, and `/challenge/planet`.We have to run the /challenge/hack command, and duplicate its output as input to both the /challenge/the and the /challenge/planet commands.

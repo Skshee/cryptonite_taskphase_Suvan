@@ -12,7 +12,7 @@ We have the following info:
 
 ![Error in loading image](image-14.png)
 
-In the 1st prompt I 
+In the 1st prompt I didn't use "Process Substitution" properly which I why it threw an error.
 
 
 In the 2nd prompt, I made the mistake of using the pipe command unnecessarily.`"|" is used to pipe stdout to another command`, but in this case, you want to use process substitution to handle both stdout and stderr separately.
