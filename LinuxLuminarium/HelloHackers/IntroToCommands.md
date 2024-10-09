@@ -24,4 +24,4 @@ After entering this command, I successfully obtained the flag.
 
 ## Flag
 
-**pwn.college{4x8mI8ENOTBDP6vNMNmIi859lGE.ddjNyUDLzITO0czW}**
+`pwn.college{4x8mI8ENOTBDP6vNMNmIi859lGE.ddjNyUDLzITO0czW}`

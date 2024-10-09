@@ -18,4 +18,4 @@ After passing the command with the argument, I successfully obtained the flag.
 
 # Flag
 
-**pwn.college{8clJo-vvMuFnkSZ0qyrFhhorzH0.dhjNyUDLzITO0czW}**
+`pwn.college{8clJo-vvMuFnkSZ0qyrFhhorzH0.dhjNyUDLzITO0czW}`
