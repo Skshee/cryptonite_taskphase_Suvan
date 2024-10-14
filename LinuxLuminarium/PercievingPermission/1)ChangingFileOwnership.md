@@ -6,6 +6,9 @@ In Linux, files have different permissions or file modes. You can check out a pe
 
 `ls -l` - Used to check permissions of a file
 
+Example -  `ls -l filename.txt`
+            -r-------- 1 root root 53 Jul  4 04:47 /flag
+
 The first character of each line represents the file type. `-` represents  a regular file, `d` represents a directory, `l` represents a symbolic link, `
 
 The next nine characters are the actual access permissions of the file or directory, split into 3 parts.
