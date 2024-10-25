@@ -4,7 +4,7 @@ Okay so in this challenge, we basically are trying to search for a number betwee
 
 So I followed the following steps and guessed the number.
 
-![alt text](image.png)
+![alt text](Binary-Search.png)
 
 ## Flag
 

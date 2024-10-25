@@ -8,7 +8,7 @@ The objective of this challeneg is to use the **find** command to find a particu
 
 In this challenge, we need to find for the file  named `"uber-seceret.txt"` after unzipping the folder.
 
-![alt text](image-2.png)
+![alt text](First-Find.png)
 
 I used the following command to find the required file:
 

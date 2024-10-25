@@ -25,7 +25,7 @@ I connected to the server  using the following command:
 
 `ssh  ctf-player@titan.picoctf.net -p 53826`
 
-![alt text](image-1.png)
+![alt text](Super-SSH.png)
 
 After successfully connecting to the server, we get the flag.
 
