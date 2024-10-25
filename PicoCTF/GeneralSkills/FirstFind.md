@@ -18,7 +18,7 @@ Then I found the location of the uber-secret.txt file.
 
 Now I know that every flag starts with **"picoCTF** and hence I used the grep command to find all patterns containing  the string "picoCTF" in the file:
 
-**Command** - `grep "picoCTF" /file-path`
+**Command** - `grep "picoCTF" /the-file-path`
 
 From this, I got the flag.
 
