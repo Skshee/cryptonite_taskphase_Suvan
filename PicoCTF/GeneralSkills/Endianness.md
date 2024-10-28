@@ -31,7 +31,7 @@ Okay so the first thing we needed to find was the **Little Endian**  representat
 
 So the first thing I did way convert the given word into Hexadecimal  format. Using an online ASCII to Hexadecimal converter.
 
-![Endianness-1](image.png)
+![Endianness-1](Endianness-1.png)
 
 In Little Endian we need to  reverse the order of the bytes and remove the spaces.
 
@@ -41,7 +41,7 @@ In Big Endian, we don't need to make any changes, we just need to remove the spa
 
 Big Endian - `7669757264`
 
-![Endianness-2](image.png)
+![Endianness-2](Endianness-2.png)
 
 From this, I got the flag.
 
