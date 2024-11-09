@@ -2,7 +2,7 @@
 
 ## Challenge Details
 
-![alt text](./Images/VaultDoor-3.png)
+![Error in loading image](./Images/VaultDoor-3.png)
 
 ## Approach
 

@@ -2,7 +2,7 @@
 
 ## Challenge Details
 
-![alt text](./Images/VaultDoor-1.png)
+![Error in loading image](./Images/VaultDoor-1.png)
 
 **Source Code** - [VaultDoor1.java](./Resources&SourceCodes/VaultDoor1.java)
 
