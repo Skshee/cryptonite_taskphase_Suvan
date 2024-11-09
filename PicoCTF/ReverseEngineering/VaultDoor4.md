@@ -38,11 +38,11 @@ I passed the byte data into their respective decoding schemes using an Online de
 
 Also I couldn't directly convert the Octal to ASCII. Hence, I first converted Octal to Decimal and then Decimal to ASCII.
 
-From this, I got the password: `jU5t_4_bUnCh_0f_bYt3s_c1`
+From this, I got the password: `jU5t_4_bUnCh_0f_bYt3s_c194f7458e`
 
 ## Flag
 
-`picoCTF{jU5t_4_bUnCh_0f_bYt3s_c1}`
+`picoCTF{jU5t_4_bUnCh_0f_bYt3s_c194f7458e}`
 
 
 
