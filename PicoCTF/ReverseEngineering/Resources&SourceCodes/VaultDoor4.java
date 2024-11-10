@@ -12,6 +12,7 @@ class VaultDoor4 {
 	} else {
 	    System.out.println("Access denied!");
         }
+        scanner.close();
     }
 
     // I made myself dizzy converting all of these numbers into different bases,

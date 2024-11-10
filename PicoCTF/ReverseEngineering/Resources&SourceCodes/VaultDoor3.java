@@ -12,6 +12,7 @@ class VaultDoor3 {
 	} else {
 	    System.out.println("Access denied!");
         }
+        scanner.close();
     }
 
     // Our security monitoring team has noticed some intrusions on some of the

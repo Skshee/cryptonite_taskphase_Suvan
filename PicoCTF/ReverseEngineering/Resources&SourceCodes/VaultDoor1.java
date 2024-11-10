@@ -12,6 +12,7 @@ class VaultDoor1 {
         } else {
             System.out.println("Access denied!");
         }
+        scanner.close();
     }
 
     // I came up with a more secure way to check the password without putting
