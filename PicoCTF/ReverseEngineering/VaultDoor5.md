@@ -10,7 +10,7 @@ Source Code : [VaultDoor-5.java](./Resources&SourceCodes/VaultDoor5.java)
 
 When I opened the Java code, I saw that there is a method called `checkPassword` of return type boolean which returns true if the give String value passed as a parameter matches a target value.
 
-``` 
+``` java
 public boolean checkPassword(String password) {
         String urlEncoded = urlEncode(password.getBytes());
         String base64Encoded = base64Encode(urlEncoded.getBytes());
@@ -35,7 +35,7 @@ Before we discuss the decryption process, let's try to understand how the `urlEn
 
 ### URL encoding
 
-```
+``` java
 public String urlEncode(byte[] input) {
         StringBuffer buf = new StringBuffer();
         for (int i=0; i<input.length; i++) {
@@ -61,7 +61,7 @@ public String urlEncode(byte[] input) {
 
 ### Base 64 Encoding
 
-``` 
+``` java
 public String base64Encode(byte[] input) {
         return Base64.getEncoder().encodeToString(input);
     }

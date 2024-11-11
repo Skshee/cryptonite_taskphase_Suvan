@@ -17,7 +17,7 @@ Source Code : [VaultDoor4.java](./Resources&SourceCodes/VaultDoor4.java)
 So when I opened this program, I found a method called checkPassword of type boolean that returns true if the password entered by the user matches a target value. However the target value is converted to an array and each character is converted into some other value using ASCII encoding.
 
 This following code snippet is the contains the encoded array myBytes:
-```
+``` java
 byte[] myBytes = {
             106 , 85  , 53  , 116 , 95  , 52  , 95  , 98  ,
             0x55, 0x6e, 0x43, 0x68, 0x5f, 0x30, 0x66, 0x5f,

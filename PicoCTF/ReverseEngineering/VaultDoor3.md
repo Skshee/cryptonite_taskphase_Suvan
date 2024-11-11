@@ -10,7 +10,7 @@ When I opened the Java souce code, I found a method called checkPassword of bool
 
 **Source Code** - [VaultDoor3.java](./Resources&SourceCodes/VaultDoor3.java)
 
-```
+``` java
 public boolean checkPassword(String password) {
         if (password.length() != 32) {
             return false;

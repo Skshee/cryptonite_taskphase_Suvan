@@ -10,7 +10,7 @@
 
 So just like the previous challenges, here also we have a checkPassword method
 
-```
+``` java
 public boolean checkPassword(String password) {
         if (password.length() != 32) {
             return false;
@@ -46,3 +46,4 @@ From this, I got the password - `n0t_mUcH_h4rD3r_tH4n_x0r_3ce2919`
 ## Flag
 
 `picoCTF{n0t_mUcH_h4rD3r_tH4n_x0r_3ce2919}`
+
