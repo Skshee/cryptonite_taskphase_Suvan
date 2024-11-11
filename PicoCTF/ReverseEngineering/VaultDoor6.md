@@ -39,6 +39,8 @@ Then we are subracting the XORed value with the myBytes value at that index and 
 To Decrypt this, I wrote the following code :-
 [PasswordXORDecrypter.java](./Resources&SourceCodes/PasswordXORDecrypter.java)
 
+The logic I have used here is `when we XOR an already XORed value, we get the same value back` which is something I learnt in my electronics lectures.
+
 From this, I got the password - `n0t_mUcH_h4rD3r_tH4n_x0r_3ce2919`
 
 ## Flag
