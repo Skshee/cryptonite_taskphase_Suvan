@@ -46,6 +46,8 @@ So here I'll explain what I understood :-
 
     In func1, we first allocate space on the stack for 2 integers. Stack grows downward in memory so we use the SUB (subtract function) to allocate space on the stack.
 
+    sp - stack pointer
+
     sub sp, sp, #16             // Create space on the stack for two integers
 
     str w0, [sp, 12]            // Store the first argument (w0) at address [sp + 12](offset 12)
