@@ -2,7 +2,7 @@
 
 ## Challenge Description
 
-![alt text](./Images/ARMssembly3.png)
+![alt text](./Images/ARMssembly2.png)
 
 ## Approach
 
