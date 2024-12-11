@@ -87,7 +87,7 @@
 So basically what we're doing is, we're checking whether the value at address[x29+28] which initially is our argument is even or odd.
 
 If it is even (i.e last digit in binary = 0), then we're doing a logical right shift.
-If it is odd, then we add 3 to value at address[x29+44] which was initially set to 0 and then right shift the value at address[x29+28].
+If it is odd, then we add 3 to value at address[x29+44] which was initially set to 0 and then right shift the value at address[x29+28]. (The next label encountered is .L3. So, the program naturally reaches .L3 after finishing the instructions in .L4.)
 
 We keep repeating this till the value at address[x29+28] is 0.
 
