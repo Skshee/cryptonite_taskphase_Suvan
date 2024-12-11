@@ -58,7 +58,7 @@
 
         str     w0, [x29, 44]
 
-5. **.L3*
+5. **.L3**
 
         ldr     w0, [x29, 28]                   // Load the value at address[x29+28] into w0
 
