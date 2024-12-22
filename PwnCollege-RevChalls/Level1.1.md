@@ -31,7 +31,7 @@ And I saw there are 3 functions that might be useful : `read, puts and memcmp`
 
 I went through the entire assembly code using objdump searching for any calls to `memcmp` as that is the function that compares the values.
 
-![alt text](image.png)
+![alt text](./ReverseEngineering/Images/Level1.1(3).png)
  
 So what's happening here is the program takes in input from the user and compares it with the value stored at address `[rip+0x2b46]` where rip is the instructional pointer.
 
