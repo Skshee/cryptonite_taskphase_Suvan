@@ -55,13 +55,13 @@ I opened the assembly using objdump. I am going to break down the code one by on
 
     14e3:       b8 04 00 00 00          mov    eax,0x4
 
-    14e8:       2b 45 ec                sub    eax,DWORD PTR [rbp-0x14]     // Puts 1st byte in 2nd position
+    14e8:       2b 45 ec                sub    eax,DWORD PTR [rbp-0x14]     // 4-[rbp-0x14] (reading backwards)
 
     14eb:       48 98                   cdqe
 
     14ed:       0f b6 55 ea             movzx  edx,BYTE PTR [rbp-0x16]      
 
-    14f1:       88 54 05 f2             mov    BYTE PTR [rbp+rax*1-0xe],dl
+    14f1:       88 54 05 f2             mov    BYTE PTR [rbp+rax*1-0xe],dl  // Puts 1st byte in 2nd position
 
     14f5:       83 45 ec 01             add    DWORD PTR [rbp-0x14],0x1     // Adds 1 to [rbp-0x14]
 
@@ -78,7 +78,7 @@ I opened the assembly using objdump. I am going to break down the code one by on
     151e:       e8 4d fc ff ff          call   1170 <memcmp@plt>
 ```
 
-So to sum it up:
+`Summary`
 
 [rbp-0x14] - Counter
 [rbp-0x16] - first byte (let's say a) 
