@@ -20,54 +20,54 @@ Even here I found `read and memcmp` PLTs so I understood that I had to find thes
 I opened the assembly using objdump. I am going to break down the code one by one
 
 ``` asm
-    14a9:       e8 b2 fc ff ff          call   1160 <read@plt>      // Taking in input from user
+    14a9:       e8 b2 fc ff ff          call   1160 <read@plt>      ; Taking in input from user
 
-    14ae:       c7 45 ec 00 00 00 00    mov    DWORD PTR [rbp-0x14],0x0     // Storing the value 0 at [rbp-0x14]
+    14ae:       c7 45 ec 00 00 00 00    mov    DWORD PTR [rbp-0x14],0x0     ; Storing the value 0 at [rbp-0x14]
 
-    14b5:       eb 42                   jmp    14f9 <strerror@plt+0x349>    // Jumping to line 14f9
+    14b5:       eb 42                   jmp    14f9 <strerror@plt+0x349>    ; Jumping to line 14f9
 
-    14b7:       8b 45 ec                mov    eax,DWORD PTR [rbp-0x14]     // Moving the value at [rbp-0x14] to eax
+    14b7:       8b 45 ec                mov    eax,DWORD PTR [rbp-0x14]     ; Moving the value at [rbp-0x14] to eax
 
-    14ba:       48 98                   cdqe        // Converts a signed doubleword (32-bit) in eax to a signed quadword (64-bit) in rax
+    14ba:       48 98                   cdqe        ; Converts a signed doubleword (32-bit) in eax to a signed quadword (64-bit) in rax
 
-    14bc:       0f b6 44 05 f2          movzx  eax,BYTE PTR [rbp+rax*1-0xe]     // Gets first byte
+    14bc:       0f b6 44 05 f2          movzx  eax,BYTE PTR [rbp+rax*1-0xe]     ; Gets first byte
 
-    14c1:       88 45 ea                mov    BYTE PTR [rbp-0x16],al          // al is the lowest byte of eax. [rbp-0x16] is like temp 1
+    14c1:       88 45 ea                mov    BYTE PTR [rbp-0x16],al          ; al is the lowest byte of eax. [rbp-0x16] is like temp 1
 
-    14c4:       b8 04 00 00 00          mov    eax,0x4      // Moving the value 4 into eax
+    14c4:       b8 04 00 00 00          mov    eax,0x4      ; Moving the value 4 into eax
 
-    14c9:       2b 45 ec                sub    eax,DWORD PTR [rbp-0x14]       // 4-[rbp-0x14] and stores result back in eax
+    14c9:       2b 45 ec                sub    eax,DWORD PTR [rbp-0x14]       ; 4-[rbp-0x14] and stores result back in eax
 
     14cc:       48 98                   cdqe    
 
-    14ce:       0f b6 44 05 f2          movzx  eax,BYTE PTR [rbp+rax*1-0xe]     // Gets 2nd byte
+    14ce:       0f b6 44 05 f2          movzx  eax,BYTE PTR [rbp+rax*1-0xe]     ; Gets 2nd byte
 
-    14d3:       88 45 eb                mov    BYTE PTR [rbp-0x15],al       // Temp 2
+    14d3:       88 45 eb                mov    BYTE PTR [rbp-0x15],al       ; Temp 2
 
     14d6:       8b 45 ec                mov    eax,DWORD PTR [rbp-0x14]     
 
     14d9:       48 98                   cdqe
 
-    14db:       0f b6 55 eb             movzx  edx,BYTE PTR [rbp-0x15]     // edx = temp 2
+    14db:       0f b6 55 eb             movzx  edx,BYTE PTR [rbp-0x15]     ; edx = temp 2
 
 **Swapping Occurs Here**
-    14df:       88 54 05 f2             mov    BYTE PTR [rbp+rax*1-0xe],dl   // Puts 2nd byte in first position
+    14df:       88 54 05 f2             mov    BYTE PTR [rbp+rax*1-0xe],dl   ; Puts 2nd byte in first position
 
     14e3:       b8 04 00 00 00          mov    eax,0x4
 
-    14e8:       2b 45 ec                sub    eax,DWORD PTR [rbp-0x14]     // 4-[rbp-0x14] (reading backwards)
+    14e8:       2b 45 ec                sub    eax,DWORD PTR [rbp-0x14]     ; 4-[rbp-0x14] (reading backwards)
 
     14eb:       48 98                   cdqe
 
     14ed:       0f b6 55 ea             movzx  edx,BYTE PTR [rbp-0x16]      
 
-    14f1:       88 54 05 f2             mov    BYTE PTR [rbp+rax*1-0xe],dl  // Puts 1st byte in 2nd position
+    14f1:       88 54 05 f2             mov    BYTE PTR [rbp+rax*1-0xe],dl  ; Puts 1st byte in 2nd position
 
-    14f5:       83 45 ec 01             add    DWORD PTR [rbp-0x14],0x1     // Adds 1 to [rbp-0x14]
+    14f5:       83 45 ec 01             add    DWORD PTR [rbp-0x14],0x1     ; Adds 1 to [rbp-0x14]
 
-    14f9:       83 7d ec 01             cmp    DWORD PTR [rbp-0x14],0x1     // Compares [rbp-0x14] with 1
+    14f9:       83 7d ec 01             cmp    DWORD PTR [rbp-0x14],0x1     ; Compares [rbp-0x14] with 1
 
-    14fd:       7e b8                   jle    14b7 <strerror@plt+0x307>    //If <= 1, jump to line 14b7
+    14fd:       7e b8                   jle    14b7 <strerror@plt+0x307>    ; If <= 1, jump to line 14b7
 
     14ff:       48 8d 3d f2 0d 00 00    lea    rdi,[rip+0xdf2]        # 22f8 <strerror@plt+0x1148>
     1506:       e8 15 fc ff ff          call   1120 <puts@plt>
