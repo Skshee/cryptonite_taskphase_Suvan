@@ -109,6 +109,13 @@ Therefore, the input should be : `voggj`
 
 This was correct and I got the flag.
 
+## My Learning
+
+1. al - Lowest 8 bits of rax
+   dl - Lowest 8 bits of rdx
+
+2. cdqe - Converts a signed doubleword (32-bit) in eax to a signed quadword (64-bit) in rax
+
 ## Flag
 
 `pwn.college{s6i290aAY0CVkYr5ADCaHFtKaZf.0lN1IDLzITO0czW}`
