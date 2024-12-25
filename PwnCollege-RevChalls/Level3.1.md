@@ -62,6 +62,7 @@ I opened the assembly using objdump. I am going to break down the code one by on
     14ed:       0f b6 55 ea             movzx  edx,BYTE PTR [rbp-0x16]      
 
     14f1:       88 54 05 f2             mov    BYTE PTR [rbp+rax*1-0xe],dl  ; Puts 1st byte in 2nd position
+**Swapping Ends here
 
     14f5:       83 45 ec 01             add    DWORD PTR [rbp-0x14],0x1     ; Adds 1 to [rbp-0x14]
 
