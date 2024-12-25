@@ -95,3 +95,22 @@ This code basically does three main operations
 - Similar structure to first loop
 - Loops through all 16 bytes
 - XORs each byte with 0xd0
+
+So basically, our input is `16 characters long` and it's getting `XORed with 0x61, reversed and XORed with 0xd0`.
+
+I found the final value using the following instruction : `objdump -s --start-address=0x4009 --stop-address=0x4025 ./babyrev-level-6-1`
+
+![alt text](./ReverseEngineering/Images/Level6.1(1).png)
+
+I got the hexadecimal values of the final output from this.
+
+I wrote the following Python script to reverse engineer the input : [Babyrev6.1](./ReverseEngineering/Codes/Level6.1.py)
+
+Therefore, input : `skblbhzzoqezghhk`
+
+![alt text](./ReverseEngineering/Images/Level6.1(2).png)
+
+## Flag
+
+`pwn.college{QcHKWq6A2pKIEO5tuFsjO_9n4uu.0lM2IDLzITO0czW}`
+
