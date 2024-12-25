@@ -115,7 +115,7 @@ Then I opened the assembly using the objdump instruction.
 [rbp-0x14]: Keeps track of the current index within a pass over the input.
 [rbp-0x18]: Keeps track of the current pass number over the input.
 
-This basically a bubble sort program.
+This is basically a bubble sort program.
 
 
 Expected output is at address [rip+0x2ac4] i.e `0x1545 + 0x2ac4 = 4009`
