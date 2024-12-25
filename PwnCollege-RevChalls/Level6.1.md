@@ -87,8 +87,8 @@ This code basically does three main operations
 2. 14e1-1530: Second loop
 - Counter [rbp-0x28] goes from 0 to 7
 - For each iteration:
-  * Saves byte from start in temporary var [rbp-0x2e]
-  * Saves byte from end in temporary var [rbp-0x2d]
+  * Saves byte from start in temp1[rbp-0x2e]
+  * Saves byte from end in temp2 [rbp-0x2d]
   * Swaps the bytes
 
 3. 1532-155c: Third loop
