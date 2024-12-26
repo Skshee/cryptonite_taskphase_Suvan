@@ -61,3 +61,8 @@ So now, I just needed to change the instruction at `Offset - 1AA0 with new hex v
 
 ## Flag
 `pwn.college{gdDjH7lAweuu4I3Gs1exRm6twaY.01N2IDLzITO0czW}`
+
+## Resources
+
+http://unixwiz.net/techtips/x86-jumps.html
+
