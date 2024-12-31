@@ -15,6 +15,7 @@ After spending some time researching and learning about ARM, I was somewhat able
 So here I'll explain what I understood :-
 
 1. **Main Function**
+    ```
 
     x29 - Frame Pointer
 
@@ -41,8 +42,10 @@ So here I'll explain what I understood :-
     mov w1, w0                  // Store the result of func1 in w1
 
     Then we call the func1 function and store the obtained result in register w1.
+    ```
 
 2. **Func1**
+```
 
     In func1, we first allocate space on the stack for 2 integers. Stack grows downward in memory so we use the SUB (subtract function) to allocate space on the stack.
 
@@ -65,7 +68,7 @@ So here I'll explain what I understood :-
     ldr w0, [sp, 12]            // Otherwise, load w1 into w0 (return the larger value)
 
     b .L3                       // Skip to the end
-
+```
 
 
     So this function first stores the 2 arguments given from the main function into memory using STR.
