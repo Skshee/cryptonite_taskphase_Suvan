@@ -47,7 +47,7 @@ I did more background search on M.M by opening his Github profile and opening th
 And there, I found out that M.M's real name is `Mayor Malware`.
 
 4. 
-Lastly I needed to find out the number of commits on the Github repo where the issue was raised.
+Finally I needed to find out the number of commits on the Github repo where the issue was raised.
 
 I had already found the conversationg b/w M.M and Bloatware where the issue was raised and opened that server which was `CryptoWallet-Search`.
 

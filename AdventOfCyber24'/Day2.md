@@ -1,6 +1,6 @@
 # Day 2
 
-# Investigating alerts
+## Investigating alerts
 
 In this challenge, we're tasked with going through an malicious activity alert and find out whether is it True Positive or False Positive
 
