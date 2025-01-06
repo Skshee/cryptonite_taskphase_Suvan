@@ -25,11 +25,11 @@ Now when I opened the cart and proceeded to checkout. It asked for a name and ad
 
 At the end of that it said our wish has been saved as wish#21 which was a link but we get an error message.
 
-![alt text](image.png)
+![alt text](./Images/Day5.png)
 
 Now the 2nd request, i.e the Wishlist one had the XML structure in it so that's one place where I should look for. 
 
-![alt text](image-1.png)
+![alt text](./Images/Day-5(1).png)
 
 Then I inputted the given payload :
 
@@ -60,13 +60,13 @@ So our new payload is :
 </wishlist>
 ```
 
-![alt text](image-2.png)
+![alt text](./Images/Day5(2).png)
 
 Now instead of wish_21 if I put wish_1 or something like that, I could read other's wishes.
 
 Then I opened intruder. The wish I sent was wish_1.txt and did the following
 
-![alt text](image-3.png)
+![alt text](./Images/Day5(3).png)
 
 This gave me multiple requests and their responses, I found the flag in `wish_15.txt`
 
@@ -74,7 +74,7 @@ This gave me multiple requests and their responses, I found the flag in `wish_15
 
 There is even a changelog at this IP and we find another flag over there.
 
-![alt text](image-4.png)
+![alt text](./Images/Day5(4).png)
  `Flag : THM{m4y0r_m4lw4r3_b4ckd00rs}`
 
- ![alt text](image-5.png)
+ ![alt text](./Images/Day5(6).png)
